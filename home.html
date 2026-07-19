@@ -3,66 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wanderlust Travels | Explore the World</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
-        
-        /* Navigation */
-        nav { background: #2c3e50; color: white; padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; }
-        .nav-links a { color: white; text-decoration: none; margin-left: 20px; }
-
-        /* Hero Section */
-        .hero { background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
-                height: 60vh; background-size: cover; display: flex; flex-direction: column; justify-content: center; align-items: center; color: white; text-align: center; }
-        
-        .hero h1 { font-size: 3rem; margin-bottom: 10px; }
-
-        /* Content Sections */
-        .container { padding: 50px 5%; }
-        .destinations { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 20px; }
-        .card { border: 1px solid #ddd; padding: 15px; border-radius: 8px; text-align: center; }
-        
-        /* Footer */
-        footer { background: #2c3e50; color: white; text-align: center; padding: 20px; margin-top: 20px; }
-    </style>
+    <title>Travel Agency</title>
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/shared.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/middle.css">
+    <link rel="stylesheet" href="css/ending.css">
 </head>
 <body>
 
-    <nav>
-        <h2>Wanderlust Travels</h2>
-        <div class="nav-links">
-            <a href="#">Home</a>
-            <a href="#">Destinations</a>
-            <a href="#">Contact</a>
+    <!-- ========================================== -->
+    <!-- PERSON 1: HOME SECTION (Header & Hero)     -->
+    <!-- ========================================== -->
+    <header class="home-section">
+        <nav>
+            <div class="logo">TravelPro</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero" id="home">
+            <h1>Discover Your Next Adventure</h1>
+            <p>Explore the world with our exclusive travel packages.</p>
+            <button>Book Now</button>
         </div>
-    </nav>
-
-    <header class="hero">
-        <h1>Your Next Adventure Awaits</h1>
-        <p>Expertly curated travel experiences around the globe.</p>
     </header>
+    <!-- ============ END PERSON 1 ================ -->
 
-    <section class="container">
+
+
+    <!-- ========================================== -->
+    <!-- PERSON 2: MIDDLE SECTION (Destinations)    -->
+    <!-- ========================================== -->
+    <main class="middle-section" id="destinations">
         <h2>Popular Destinations</h2>
-        <div class="destinations">
+        <div class="card-container">
+            <!-- Destination Card 1 -->
             <div class="card">
                 <h3>Paris, France</h3>
-                <p>Experience the city of lights and world-class dining.</p>
+                <p>Experience the city of love.</p>
             </div>
+            <!-- Destination Card 2 -->
             <div class="card">
                 <h3>Bali, Indonesia</h3>
-                <p>Find peace in tropical landscapes and ancient temples.</p>
+                <p>Relax on beautiful tropical beaches.</p>
             </div>
+            <!-- Destination Card 3 -->
             <div class="card">
-                <h3>Kyoto, Japan</h3>
-                <p>Discover the perfect blend of tradition and modernity.</p>
+                <h3>Tokyo, Japan</h3>
+                <p>Discover a mix of modern and traditional.</p>
             </div>
         </div>
-    </section>
+    </main>
+    <!-- ============ END PERSON 2 ================ -->
 
-    <footer>
-        <p>&copy; 2026 Wanderlust Travels. All rights reserved.</p>
+
+
+    <!-- ========================================== -->
+    <!-- PERSON 3: ENDING SECTION (About, Contact)  -->
+    <!-- ========================================== -->
+    <footer class="ending-section">
+        <section id="about" class="about-us">
+            <h2>About Us</h2>
+            <p>We are a premium travel agency dedicated to providing unforgettable experiences.</p>
+        </section>
+
+        <section id="contact" class="contact-form">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <textarea placeholder="Your Message"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <div class="copyright">
+            <p>&copy; 2026 TravelPro Agency. All rights reserved.</p>
+        </div>
     </footer>
+    <!-- ============ END PERSON 3 ================ -->
 
 </body>
 </html>

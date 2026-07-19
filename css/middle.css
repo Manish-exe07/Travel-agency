@@ -1,0 +1,30 @@
+.middle-section {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.middle-section h2 {
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.middle-section .card-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.middle-section .card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 300px;
+    text-align: left;
+}
+
+.middle-section .card h3 {
+    color: #4facfe;
+    margin-bottom: 0.5rem;
+}

@@ -1,0 +1,44 @@
+/* Navigation /
+.home-section nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    color: white;
+    padding: 1rem 2rem;
+}
+
+.home-section .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.home-section .nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+/ Hero Section */
+.home-section .hero {
+    background-color: #4facfe;
+    color: white;
+    text-align: center;
+    padding: 5rem 2rem;
+}
+
+.home-section .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.home-section .hero button {
+    padding: 10px 20px;
+    margin-top: 1rem;
+    background: #fff;
+    color: #4facfe;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
